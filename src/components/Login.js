@@ -22,6 +22,7 @@ function Login() {
    
     <div>
        <Hero>
+       <div class="p-3 mb-2 bg-primary text-dark text-dark bg-opacity-30">
        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label for="exampleInputEmail1" 
@@ -61,6 +62,9 @@ function Login() {
                 </button>
         </form>
         
+ 
+        </div> 
+       
       </Hero>
       
     </div>

@@ -29,10 +29,12 @@ function Register() {
 }
   return (
    
-    <div>
+    <div >
        <Hero> 
+       <div className="p-3 mb-2 bg-primary text-dark text-dark bg-opacity-30">
        <form onSubmit={handleSubmit} >
-          <div class="row">
+         <div className="row">
+         <div className="col-md-6 mb-4">
             <label for="exampleInputEmail1" 
             className="form-label">
               Username</label>
@@ -46,93 +48,88 @@ function Register() {
                   onChange={handleChange}
             />
           </div>
-        <div class="row">
-            <label for="exampleInputEmail1" 
-            className="form-label">
-              Email </label>
-            <input 
-                  type="email"  
-                  className="form-control" 
-                  id="email" 
-                  placeholder="Enter email"
-                  aria-describedby="emailHelp"
-                  value={state.email}
-                  onChange={handleChange}
-            />
+              <div className="col-md-6 mb-4">
+                  <label for="exampleInputEmail1" 
+                  className="form-label">
+                    Email </label>
+                  <input 
+                        type="email"  
+                        className="form-control" 
+                        id="email" 
+                        placeholder="Enter email"
+                        aria-describedby="emailHelp"
+                        value={state.email}
+                        onChange={handleChange}
+                  />
+                </div>
+         </div>
+         
+         <div className="row">
+              <div className="col-md-6 mb-4">
+                  <label for="exampleInputEmail1" 
+                  className="form-label">
+                    Country</label>
+                  <input 
+                        type="country"  
+                        className="form-control" 
+                        id="country" 
+                        placeholder="Enter country"
+                        aria-describedby="emailHelp"
+                        value={state.country}
+                        onChange={handleChange}
+                  />
+                </div>
+                
+                <div className="col-md-6 mb-4">
+                  <label for="exampleInputEmail1" 
+                  className="form-label">
+                    City</label>
+                  <input 
+                        type="city"  
+                        className="form-control" 
+                        id="city" 
+                        placeholder="Enter city"
+                        aria-describedby="emailHelp"
+                        value={state.city}
+                        onChange={handleChange}
+                  />
+                </div>
           </div>
           
-          <div class="row">
-            <label for="exampleInputEmail1" 
-            className="form-label">
-              Country</label>
-            <input 
-                  type="country"  
-                  className="form-control" 
-                  id="country" 
-                  placeholder="Enter country"
-                  aria-describedby="emailHelp"
-                  value={state.country}
-                  onChange={handleChange}
-            />
-          </div>
-         <div class="row">
-            <label for="exampleInputEmail1" 
-            className="form-label">
-            Upload Image</label>
-            <input 
-                  type="image"  
-                  className="form-control" 
-                  id="img" 
-                  placeholder="Enter image"
-                  alt="img"
-                  aria-describedby="emailHelp"
-                  value={state.img}
-                  onChange={handleChange}
-            />
-          </div>
-         <div class="row">
-            <label for="exampleInputEmail1" 
-            className="form-label">
-              City</label>
-            <input 
-                  type="city"  
-                  className="form-control" 
-                  id="city" 
-                  placeholder="Enter city"
-                  aria-describedby="emailHelp"
-                  value={state.city}
-                  onChange={handleChange}
-            />
-          </div>
-          <div class="row">
-            <label for="exampleInputEmail1" 
-            className="form-label">
-              Phone Number</label>
-            <input 
-                  type="phone"  
-                  className="form-control" 
-                  id="phone" 
-                  placeholder="Enter phone"
-                  aria-describedby="emailHelp"
-                  value={state.phone}
-                  onChange={handleChange}
-            />
+
+          <div className="row">
+                      <div className="col-md-6 mb-4">
+                        <label for="exampleInputEmail1" 
+                        className="form-label">
+                          Phone Number</label>
+                        <input 
+                              type="phone"  
+                              className="form-control" 
+                              id="phone" 
+                              placeholder="Enter phone"
+                              aria-describedby="emailHelp"
+                              value={state.phone}
+                              onChange={handleChange}
+                        />
+                        </div>
+                        <div className="col-md-6 mb-4">
+                      <label for="exampleInputPassword1" 
+                        className="form-label"
+                        >
+                          Password
+                      </label>
+                      <input type="password" 
+                          className="form-control"
+                          id="password"
+                          placeholder="Password"
+                          value={state.password}
+                          onChange={handleChange} 
+                      />
+                  </div>
              </div>
-            <div class="row">
-                <label for="exampleInputPassword1" 
-                  className="form-label"
-                  >
-                    Password
-                </label>
-                <input type="password" 
-                    className="form-control"
-                    id="password"
-                    placeholder="Password"
-                    value={state.password}
-                    onChange={handleChange} 
-                />
-             </div>
-            
+             
+             
+            <br/>
                  <button 
                     type="submit" 
                     onClick={handleSubmit} 
@@ -140,8 +137,8 @@ function Register() {
                   >
                     Submit
                 </button>
-        </form>
-      
+        </form>  
+        </div>   
       </Hero>
       
     </div>
